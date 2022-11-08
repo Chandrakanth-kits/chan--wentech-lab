@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color changer</title>
+<script src="exp-6.js"></script>
+<link rel="stylesheet" href="style6.css">
+</head>
+<body>
+<div class="container">
+<div id="box">Welcome</div>
+</div>
+<br><br>
+<div class="container2">
+Background color: <input id="bgcolor" type="color"
+onchange="bgcolorchange()">
+<br><br>
+Text Color: <input type="color" id="textcolor"
+onchange="textcolchange()">
+<br><br>
+Text Size: <select name="fontsize" id="fontsize" onchange="textsize()">
+<option value="8">8</option>
+<option value="10">10</option>
+<option value="20">20</option>
+<option value="30">30</option>
+<option value="40">40</option>
+<option value="50">50</option>
+</select>
+<br><br>
+Box Width: <input type="text" id="boxwidth" onkeyup="widthchange()">
+<br><br>
+Box Height: <input type="text" id="boxheight" onkeyup="heightchange()">
+<br><br>
+Border Radius: <input type="range" min="5" max="160" name="slider"
+id="myslider" onmousemove="borderRadius()">
+</div>
+</body>
+</html
