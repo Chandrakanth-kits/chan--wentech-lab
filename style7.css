@@ -1,0 +1,22 @@
+.a{
+    background-color:  rgb(2, 166, 171) ;
+    color: white;
+    text-align: left;
+    border: solid black;
+    margin-right: 600px;
+  
+}
+.b{
+    padding-top: 30px;
+    padding-bottom: 70px;
+    background-color: white;
+    color: black;
+}
+.c{
+    float: right;
+    margin-right: 300px;
+}
+#b{
+    float: right;
+    margin-right: 100px;
+}
