@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script>
+        var app = angular.module('myapp', ['ngRoute']);
+        app.config(function ($routeProvider) {
+            $routeProvider.when('/home', {
+                templateUrl: 'Exp-8.html'
+            })
+                .when('/Cake', {
+                    templateUrl:'exp-2.html'
+                })
+                .when('/coffee',{
+                    templateUrl:'exp-1.html'
+                })
+                .when('/calc',{
+                    templateUrl:'Exp-7.html'
+                })
+                .when('/grade',{
+                    templateUrl:'ex-3.html'
+                })
+                .otherwise({redirectTo:'/'})
+        })
+    </script>
+</head>
+
+<body ng-app="myapp">
+    <table cellspacing = 30 border = "0" width = "100%" style="background-color: gray; color: aqua;">
+    <td><a href="#!home">Grade</a></td> 
+    <td><a href="#!Cake">College Website</a></td>
+    <td><a href="#!coffee">Resume</a></td>
+    <td><a href="#!calc">EMI</a></td>
+    <td><a href="#!grade">Collage </a></td>
+    </table>
+    <hr>
+    <div ng-view>
+    </div>
+</body>
+</html>
